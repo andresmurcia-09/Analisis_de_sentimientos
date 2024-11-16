@@ -61,8 +61,8 @@ app.layout = html.Div([
 # Callback para actualizar el gráfico con el filtro de fechas
 @app.callback(
     [dash.dependencies.Output('date-picker-range', 'end_date'),
-     dash.dependencies.Output('date-picker-range', 'start_date'),
-     dash.dependencies.Output('graph-2', 'figure')],  # Se actualiza el gráfico con id 'graph-2'
+    dash.dependencies.Output('date-picker-range', 'start_date'),
+    dash.dependencies.Output('graph-2', 'figure')],  # Se actualiza el gráfico con id 'graph-2'
     [dash.dependencies.Input('date-picker-range', 'start_date')]
 )
 def update_graph(start_date):
