@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 from dotenv import load_dotenv
 import os
 
-# Cargar las variables de entorno desde el archivo .env
+# Carga las variables de entorno desde el archivo .env
 load_dotenv()
 
 DB_HOST = os.getenv("DB_HOST")
